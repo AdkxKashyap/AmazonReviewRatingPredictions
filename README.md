@@ -1,4 +1,4 @@
-# Amazon Review Rating Predictions
+# Amazon Product Rating Predictions
 
 A machine learning project that predicts the star rating (1–5) of Amazon product reviews using both classical NLP methods and deep learning models.
 

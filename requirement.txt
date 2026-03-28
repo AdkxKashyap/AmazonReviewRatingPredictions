@@ -7,3 +7,5 @@ scikit-learn
 nltk
 keras
 keras-preprocessing
+transformers==4.41.2
+tf-keras

@@ -103,6 +103,18 @@ The classical TF-IDF + LinearSVC pipeline outperformed the LSTM-based models on 
 - **keras-preprocessing** (for `Tokenizer` compatibility with Keras 3)
 - Jupyter Notebook
 
+## Setup
+
+Install dependencies from the repository root:
+
+```bash
+source venv/bin/activate
+pip install -r requirement.txt
+venv/bin/python scripts/install_gpu_hook.py
+```
+
+For Linux/WSL GPU setups, this project uses `tensorflow[and-cuda]==2.21.0` and installs a virtualenv startup hook that preloads the CUDA libraries bundled inside the environment before TensorFlow imports. This avoids the common `Could not find cuda drivers` / `Cannot dlopen some GPU libraries` startup failure when the GPU driver is installed but the Python environment cannot see the CUDA runtime libraries.
+
 ---
 
 ## Key Lessons
